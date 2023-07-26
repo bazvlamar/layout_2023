@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div {
+    margin-bottom: 15px;
+}
+/* Завдання 1 */
+.task1_div {
+    text-align:right;
+ }
+
+#task1_d1 {
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#task1_d2 {
+    text-decoration: underline; /* Підкреслення тексту */
+}
+/* Завдання 2 */
+#task2_d1 {
+    color:crimson;
+}
+
+#task2_d2 {
+    color:cornflowerblue;
+    background: yellow;
+    border-width: 2px;
+    border-color: blue;
+    border-style: solid;
+    border-radius: 20px ;
+    text-align:right;
+    padding: 10px;
+}
+
+#task2_d3 {
+    text-decoration: underline; 
+    text-transform: uppercase;
+}
+
+/* Завдання 3-4 */
+#main_navigation {
+    display: inline-block;
+    margin:auto;
+    background: linear-gradient(0deg, rgba(42,69,214,1)  0%, rgba(201,18,58,1) 100%);
+}
+
+
+#main_navigation_list {
+    list-style-type: none;
+    padding:0;
+    margin:0 
+}
+
+#main_navigation_list>li {
+    padding: 5px 20px;
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    
+}
+
+a {
+      color:whitesmoke;  
+}
+
+#main_navigation_list>li>a:hover {
+    color:gold;
+    text-decoration: underline;
+}
+
+
+/* Завдання 5 */
+
+.task5_div {
+    height: 200px;
+    border:3px dashed rgb(38, 38, 130);
+    background-color: lightsalmon;
+    width:20%;
+    display: inline-block;
+    margin:0px -5px 15px -5px;
+}
+
+
+/* Завдання 6 */
+
+#task6_list1 {
+    list-style-type: disc;
+}
+
+#task6_list2 {
+    list-style-type: none;
+    padding-left: 20px;
+    
+}
+#task6_list3 {
+    list-style-type: "\1F44D";
+}
+
+/* Завдання 7 */
+
+#task7_d1 {
+    background-color: gold;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+#task7_d2 {
+    background-color: darkblue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0;
+}
