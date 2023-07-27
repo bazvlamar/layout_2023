@@ -57,6 +57,7 @@ nav {
 .login_form>input {
     border-radius: 25px;
     padding-left:10px;
+    height: 25px;
 }
 
 .login_form>input:focus {
