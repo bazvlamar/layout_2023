@@ -1,0 +1,27 @@
+#main_nav>li {
+    display: flex;
+    align-content: space-between;
+    margin-right: 40px;;
+}
+
+#main_nav>li>a {
+    text-decoration: none;
+    color:ghostwhite
+}
+
+#main_nav>li>a:hover {
+    color:#9acd32;
+    font-weight: bold;
+}
+
+
+.login_form>input {
+    border-radius: 25px;
+    padding-left:10px;
+}
+
+.login_form>input:focus {
+    outline: none;
+    background-color: #9acd32;
+}
+
