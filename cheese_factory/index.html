@@ -17,6 +17,29 @@
       <div id="logo">
         <img src="img/logo.png" alt="logo_cow" />
       </div>
+      <div class="hamburger">
+        <a href="#">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <div class="bar-menu" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <!-- Вміст випадаючого меню -->
+        <ul>
+          <li><a class="active_link" href="#">Про нас</a></li>
+          <li><a href="#">Екскурсія і дегустація</a></li>
+          <li><a href="#">Контакти</a></li>
+          <li><a href="#">Магазинчик сиру</a></li>
+        </ul>
+      </div>
+
+      <!-- Навігація для десктопу -->
       <nav>
         <ul>
           <li><a class="active_link" href="#">Про нас</a></li>
@@ -92,4 +115,10 @@
       </div>
     </footer>
   </body>
+  <script>
+    function toggleMenu() {
+      let mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("active");
+    }
+  </script>
 </html>

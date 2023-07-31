@@ -14,6 +14,10 @@ body {
 
 /* Стилі заголовка */
 
+.mobile-menu {
+    display: none;
+}
+
 header {
     min-height: 235px;
     margin:0 30px;
@@ -26,6 +30,10 @@ header {
 nav {
     display: flex;
     justify-content: center;
+}
+
+.hamburger {
+    display: none;
 }
 
 #logo  {
@@ -78,7 +86,6 @@ main>div {
 }
 
 main>div>img {
-   width:940px;
    border-radius: 50px;
 }
 
@@ -130,7 +137,105 @@ footer {
     color: #000;
     }
     
+    
 #social>a>i:hover {
 color: #EEE6CA;
 }
 
+
+
+
+@media only screen and (max-width: 1670px)  {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    nav {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        gap: 50px;
+    }
+
+    .hamburger>a>i {
+        color: #000;
+    }
+
+        /* Стилі для відображення/приховування випадаючого меню */
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 235px;
+        left: 0px;
+        background-color: rgba(100, 100, 100);
+        width: 100%;
+        gap:30px;
+        height: 300px;
+
+    }
+
+
+    .mobile-menu>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .mobile-menu>ul>li>a {
+        color:#D9D9D9;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+}
+
+}
+
+@media only screen and (max-width: 1040px) {
+    .img {
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+    .img img {
+        max-width: 100%;
+        border-radius: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 930px) {
+    footer {
+        background-color: #D9D9D9;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap:10px;
+     }
+
+     .footer:first-child {
+        padding: 0 20px;
+     }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        gap: 10px;
+    }
+
+}
