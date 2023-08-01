@@ -48,7 +48,8 @@ body {
     background-color: #fff;
     margin-bottom: 5px;
   }
-  
+
+ 
   /* Стилі для адаптивної навігації на малих екранах */
     @media screen and (max-width: 768px) {
         .navbar-menu {
@@ -82,6 +83,8 @@ body {
         background-color: #fff;
         margin-bottom: 5px;
       }
+
+      
 
     
     .navbar-menu.active {
