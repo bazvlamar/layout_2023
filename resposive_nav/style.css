@@ -1,0 +1,95 @@
+/* Стилі для навігації */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-right: 20px;
+  }
+  
+  .navbar-menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  /* Стилі для адаптивної навігації на малих екранах */
+    @media screen and (max-width: 768px) {
+        .navbar-menu {
+          display: none;
+          position: absolute; /* Змінюємо позицію для збереження іншого контенту видимим */
+          top: 0;
+          left: 0;
+          height: 100vh; /* Задаємо висоту, щоб воно займало весь екран */
+          width: 50%; /* Задаємо ширину меню (при необхідності) */
+          background-color: #333;
+          
+    }
+      
+        .navbar-toggle {
+          display: block;
+        }
+      
+        .navbar-toggle.active span {
+          background-color: #333;
+        }
+  
+    .navbar-toggle.active {
+      display: block;
+      
+    }
+
+    .navbar-toggle.active span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 5px;
+      }
+
+    
+    .navbar-menu.active {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        font-size: 30px;
+        margin: 0;
+}
+}
