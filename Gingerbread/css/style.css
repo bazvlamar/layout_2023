@@ -42,6 +42,7 @@ ul {
     justify-content: space-around;
     align-items: center;
     gap: 100px;
+    transition: ease-in-out all .5s;
     
 }
 
@@ -137,9 +138,18 @@ article {
     bottom: 0;
 }
 
+@media screen and (max-width:1200px){
+    .navbar-menu{
+      justify-self: flex-end;
+      gap:30px;
+      scale: 0.9;
+    }
+  }
+
 @media only screen and (max-width: 768px) {
     .navbar-menu {
         display: none;
+        
     }
 
     .navbar-toggle {
@@ -151,6 +161,7 @@ article {
     }
 
     .navbar-menu.active {
+        transition: ease-in-out all 2s;
         padding-top: 30px;
         padding-left: 30px;
         display: flex;
@@ -160,13 +171,15 @@ article {
         gap:30px;
         font-size: 30px;
         margin: 0;
-        position: absolute; /* Змінюємо позицію для збереження іншого контенту видимим */
+        position: absolute; 
         top: 0;
         left: 0;
-        height: 100vh; /* Задаємо висоту, щоб воно займало весь екран */
-        width: 50%; /* Задаємо ширину меню (при необхідності) */
+        height: 100vh; 
+        width: 50%; 
         background-color: rgba(134, 92, 64, 0.9);
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        scale: 1;
+       
 
 }
 
