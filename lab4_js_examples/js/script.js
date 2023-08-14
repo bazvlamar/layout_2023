@@ -9,7 +9,7 @@
   
 // }
 
-// Зворотня діагональ (метод Максима)
+// Зворотня діагональ (метод Максима) з виконанням по кліку
 document.getElementById("makeItRed").addEventListener("click",
 function makeItRed() {
     let tab  = document.getElementById("table1");
@@ -21,6 +21,22 @@ function makeItRed() {
 }
 }
 );
+
+document.getElementById("makeItWhite").addEventListener("click",
+function makeItWhite() {
+    let tab  = document.getElementById("table1");
+    let arrayRows = tab.rows.length;
+    for (let index = 0; index < arrayRows; index++) {
+    let row = tab.rows[index]; 
+    row.cells[arrayRows - index - 1].style.background = "white";
+  
+}
+}
+);
+
+
+
+
 
 
 
