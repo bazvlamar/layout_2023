@@ -106,3 +106,80 @@ function divide() {
   
 }
 );
+
+
+
+
+function clock() {
+
+    let currentDate = new Date();
+    // Додати дату
+    let currentYear = currentDate.getFullYear();
+    let currentMonth = currentDate.getMonth() + 1;
+     if (currentMonth < 10) {
+        currentMonth = "0" + currentMonth;
+    }
+    let currentDay = currentDate.getDate();
+     if (currentDay < 10) {
+        currentDay = "0" + currentDay;
+    }
+    
+    // Додати час
+    // getHours(), getMinutes(), getSeconds(), getMilliseconds()
+    // Отримати відповідні компоненти часу.
+    
+    let currentHour = currentDate.getHours(), currentMinute = currentDate.getMinutes(), 
+    currentSecond = currentDate.getSeconds(), currentMillisecond = currentDate.getMilliseconds();
+    if (currentSecond < 10) {
+        currentSecond = "0" + currentSecond;
+    }
+    
+   
+    document.getElementById("clock").innerHTML = currentDay + ":" +  currentMonth + ":" + currentYear + 
+"<br />" + currentHour  + ":" + currentMinute + ":" + currentSecond;
+}
+
+setInterval(clock, 1000);
+
+
+
+// Гра вгадай число
+
+let randomNumber = Math.floor(Math.random()*100); // Генерує число рандомне від 1 до 100
+document.getElementById("restart").hidden = true;
+
+document.getElementById("checkBtn").addEventListener("click",
+
+function () {
+    let guessNumber = Number(document.getElementById("guessNumber").value);
+    if (randomNumber == guessNumber) {
+       document.getElementById("showResults").innerHTML += "<span id='rightAnswer'>Вітаю, ви вгадали!</span><br />";
+       document.getElementById("restart").hidden = false;
+    } else if (randomNumber > guessNumber) {
+        document.getElementById("showResults").innerHTML += "Загадане число більше! <br />";
+    } else if (randomNumber < guessNumber) {
+        document.getElementById("showResults").innerHTML += "Загадане число менше! <br />";
+    }
+    
+}
+)
+
+document.getElementById("restart").addEventListener("click", 
+function () {
+    document.getElementById("showResults").innerHTML = "";
+    randomNumber = Math.floor(Math.random()*100);
+    document.getElementById("restart").hidden = true;
+}
+
+)
+
+
+
+
+
+
+
+
+
+
+

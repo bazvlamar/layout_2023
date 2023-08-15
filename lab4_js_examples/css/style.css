@@ -22,3 +22,21 @@
     color:darkgreen;
     font-family: 'Courier New', Courier, monospace;
 }
+
+#clock {
+    border: 5px solid #9c9c9c;
+    border-radius: 20px;
+    width:250px;
+    background-color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding:20px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#rightAnswer {
+    color: yellowgreen;
+    font-weight: bold;
+    font-size: 25px;
+}

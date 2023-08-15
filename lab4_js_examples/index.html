@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Таблиця з замальованими комірками -->
     <table id="table1">
       <tr>
         <td>1:1</td>
@@ -46,6 +47,8 @@
     </table>
     <button id="makeItRed">Make it Red!</button>
     <button id="makeItWhite">Make it White!</button>
+
+    <!-- Калькулятор -->
     <div id="calc">
       <input id="num1" type="number" placeholder="Введіть число" />
       <input id="num2" type="number" placeholder="Введіть число" />
@@ -56,6 +59,16 @@
       <button id="divide">/</button>
     </div>
     <div id="res"></div>
+    <!-- Годинник -->
+    <div id="clock"></div>
+
+    <!-- Гра вгадай число -->
+    <p>Комп`ютер вибрав число від 1 до 100. Вгадайте його:</p>
+    <span>Ваш варіант: </span>
+    <input id="guessNumber" type="number" placeholder="Введіть число" />
+    <button id="checkBtn">Перевірити</button>
+    <div id="showResults"></div>
+    <button id="restart">Зіграти ще!</button>
   </body>
   <script src="js/script.js"></script>
 </html>
