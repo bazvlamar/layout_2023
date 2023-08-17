@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <div class="gallery">
+      <img
+        src="img/280px-Emperor_Penguin_Manchot_empereur.jpg"
+        data-full="image1.jpg"
+        alt="Image 1"
+      />
+      <img src="img/389175_1.jpg" data-full="image2.jpg" alt="Image 2" />
+      <img src="img/42345344363.jpg" data-full="image1.jpg" alt="Image 3" />
+      <img
+        src="img/640px-Chinstrap_Penguin.jpg"
+        data-full="image2.jpg"
+        alt="Image 4"
+      />
+      <img src="img/maxresdefault.jpg" data-full="image1.jpg" alt="Image 5" />
+      <img src="img/pingvin.jpg" data-full="image2.jpg" alt="Image 6" />
+      <!-- Add more thumbnail images here -->
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+      <span id="closeButton">✕</span>
+      <img id="modalImage" src="" alt="Full Image" />
+    </div>
+  </body>
+</html>

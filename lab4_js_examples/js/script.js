@@ -69,6 +69,25 @@ function makeItWhite() {
 //     document.getElementById("res").innerHTML = result;
 // }
 
+ // Отримуємо всі комірки таблиці
+ let cells = document.querySelectorAll('#table1 td');
+// let cells = document.getElementsByTagName('td');
+ // Додаємо обробник події для кожної комірки
+ cells.forEach(function(cell) {
+   cell.addEventListener('mouseover', function() {
+     // Генеруємо випадковий колір у форматі #RRGGBB
+     let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+     
+     // Змінюємо фон комірки на випадковий колір
+     this.style.backgroundColor = randomColor;
+   });
+ });
+
+
+
+
+
+
 
 let res = document.getElementById("res");
 
@@ -133,7 +152,13 @@ function clock() {
     if (currentSecond < 10) {
         currentSecond = "0" + currentSecond;
     }
+    if (currentMinute < 10) {
+        currentMinute = "0" + currentMinute;
+    }
     
+    if (currentHour < 10) {
+        currentHour = "0" + currentHour;
+    }
    
     document.getElementById("clock").innerHTML = currentDay + ":" +  currentMonth + ":" + currentYear + 
 "<br />" + currentHour  + ":" + currentMinute + ":" + currentSecond;
